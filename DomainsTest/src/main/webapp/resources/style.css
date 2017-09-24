@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+}
+
+body>h2 {
+	margin-top: 15px;
+}
+
+body>h2>a {
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 33px;
+}
+
+.content {
+	width: 85%;
+	margin: auto;
+	padding: 20px;
+}
+
+.content table {
+	width: 700px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+.content table td {
+	text-align: left;
+	position: relative;
+}
+
+.content table .status {
+	width: 140px;
+	font-weight: 600;
+}
+
+.content table .status i {
+    background-color: white;
+    border-radius: 4px;
+    color: red;
+    padding: 1px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+}
+
+.content table .status .fa-check-square {
+	color: green;
+	margin-left: 1px;
+}
+
+.content table .status span {
+	margin-left: 30px;
+}
+
+.content table .domain {
+	width: 70%;
+}
+
+.content table thead tr {
+	height: 60px;
+}
+
+.content table thead th {
+    font-size: 17px;
+    vertical-align: inherit;
+}
+
+.operations {
+	display: inline-block;
+	position: absolute;
+	right: 13px;
+	visibility: hidden;
+}
+
+.operations i {
+	opacity: 0.7;
+}
+
+.operations i:first-child {
+	font-size: 14px;
+}
+
+.content table tbody tr {
+	cursor: pointer;
+}
+
+.content table tbody tr:hover .operations {
+	visibility: visible;
+}
+
+.operations i:hover {
+	opacity: 1;
+}
+
+.add-domain-button {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-size: 14px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.add-domain-button:hover {
+	color: white;
+}
+
+.add-domain-field {
+	/*display: inline-block;*/
+	display: none;
+}
+
+.add-domain-field .domain-name {
+	display: inline-block;
+	width: 275px;
+	padding: 5px 10px;
+	margin-right: 5px;
+	background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.add-domain-field .domain-name:focus {
+	background-color: transparent;
+    color: white;
+    border-color: #ced6de;
+}
+
+.add-domain-field .error-input:focus, #updateDomainForm .error-input:focus {
+	border-color: #ff4444;
+}
+
+.add-domain-field input:last-child {
+	display: inline-block;
+	height: 30px;
+    vertical-align: top;
+    margin-top: 1px;
+    line-height: 0.40;
+    width: 70px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
+
+#updateDomainForm label {
+    display: inline-block;
+    font-weight: 600;
+}
+
+#updateDomainForm input {
+	display: inline-block;
+    width: 250px;
+    margin-left: 10px;
+}
+
+#modalWindowOfUpdate .modal-footer > div {
+	margin: auto;
+}
+
+#modalWindowOfUpdate .modal-footer > div button {
+	width: 80px;
+	cursor: pointer;
+}
+
+.popover {
+	max-width: 300px;
+}
+
+.listIsEmpty {
+	margin: auto;
+    width: 700px;
+    border-radius: 5px;
+}
