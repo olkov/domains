@@ -143,12 +143,12 @@ function submit(str) {
 			addDomainObj.addClass("error-input");
 			addDomainObj.focus();
 		}
-		setTimeout(function() {
-			if($("tbody").children().length != 0) {
+		/*setTimeout(function() {
+			if($("tbody").children().length != 0) {*/
 				$("#popover").popover("hide");
 				$(".listIsEmpty").remove();
-			}
-		}, 400);
+		/*	}
+		}, 400);*/
 	} else {
 		var updateDomainObj = $("#updateDomainForm input[name='domainName']");
 		if(/[a-zA-Z]/.test(updateDomainObj.val())) {
